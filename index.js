@@ -24,9 +24,6 @@ function actionApplyer(start, aryOfFns) {
     if (aryOfFns.length == 0) {
         return start
     }
-    else if (aryOfFns.length == 1) {
-        return aryOfFns[0](start)
-    }
     else {
         let newValue = aryOfFns[0](start)
         let newAry = aryOfFns.slice(1)
